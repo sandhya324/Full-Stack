@@ -76,6 +76,82 @@
 
 
 
+
+
+
+.tech-stack{
+    background-color: #f5f4f4;
+
+    margin: 10px 0px;
+    padding: 30px 20px;
+}
+
+.tech-stack h2{
+    text-align: center;
+    color: #9D4E6D;
+}
+.heading-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.heading-row p {
+    position: absolute;
+    left: 40%;
+    margin: 0;
+    color: #5A4A50;
+}
+
+.heading-row a {
+    margin-left: auto;
+    text-decoration: none;
+    color: #5A4A50;
+}
+
+.stack{
+    display: flex;
+    justify-content: center;
+}
+.stack .tech-card{
+    text-align: center;
+    padding: 20px;
+    margin: 40px 20px;
+
+    width: 300px; 
+    height: 200px;
+    
+    border-radius: 8px;
+    box-shadow: 2px 20px 30px rgba(157, 78, 109, 0.08);
+
+    background-color: white;
+}
+.stack .tech-card i{
+    color: #8F3D50;
+    font-size: 50px;
+}
+
+.stack .tech-card h4{
+    color: #9D4E6D;
+    padding: 5px 0;
+}
+.stack .tech-card p{
+    color: #5A4A50;
+    padding: 5px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 .service{
     padding: 40px 20px;
 }
@@ -96,6 +172,11 @@
 
     box-shadow: 2px 20px 30px rgba(157, 78, 109, 0.08);
 }
+.service-cards .card img{
+    width:300px;
+}
+
+
 .service-cards .card .card-body{
     padding: 20px;
 }
@@ -124,4 +205,53 @@
 }
 .service-cards .card .card-btn:hover{
     background-color: #C97C86;
+}
+
+
+
+
+
+
+
+
+
+.call-to-action{
+    background-color: #f5f4f4;
+
+    padding: 20px;
+    margin: 40px 0px;
+    text-align: center;
+}
+
+.call-to-action h4{
+    color:  #5A4A50;
+    padding: 8px 0px;
+}
+
+.call-to-action h2{
+    color: #9D4E6D;
+}
+
+.call-to-action p{
+    color:  #5A4A50;
+    padding: 15px 280px;
+    text-align: center;
+}
+
+.call-to-action .call-btn{
+    margin-top: 20px;
+    padding: 8px 19px;
+    margin-bottom: 10px;
+
+    border-radius: 4px;
+    background: #8F3D50;
+    color: white;
+
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.call-to-action .call-btn:hover{
+    background: #C97C86;
 }

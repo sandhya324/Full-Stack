@@ -1,10 +1,10 @@
 // 1 — Create an array called `students` containing 5 student names.
 // Print the first and last student.
 
-let students = ["Sandhya", "Manya", "Kavya", "Shivansh", "Girisha"];
+// let students = ["Sandhya", "Manya", "Kavya", "Shivansh", "Girisha"];
 
-console.log(students[0]);
-console.log(students[4]);
+// console.log(students[0]);
+// console.log(students[4]);
 
 
 
@@ -38,12 +38,12 @@ console.log(cities);
 // 4. Remove the first element.
 // 5. Print the final array.
 
-let numbers = [10, 20, 30];
-numbers.push(40);
-numbers.unshift(5);
-numbers.pop();
-numbers.shift();
-console.log(numbers);
+// let numbers = [10, 20, 30];
+// numbers.push(40);
+// numbers.unshift(5);
+// numbers.pop();
+// numbers.shift();
+// console.log(numbers);
 
 
 
@@ -112,3 +112,86 @@ for(let i=0; i<marks.length; i++){
 }
 
 console.log(totalMarks);
+
+
+
+
+
+
+
+// // Q1 — Basic
+// // Find the largest number.
+
+// let numbers = [12, 45, 7, 89, 23];
+// let largest = 0;
+
+// for(let i=0; i<5; i++){
+
+//     if(numbers[i] > largest){
+//         largest = numbers[i];
+//     }
+
+// }
+// console.log(largest);
+
+
+
+// // Q2 — forEach()
+// // Use forEach() to calculate the sum.
+
+// let numbers = [10, 20, 30, 40];
+// let sum = 0;
+// let total =  numbers.forEach(function(num){
+//       Mistake 2: forEach() doesn't return a new value
+//       return sum += num;
+//       sum += num;  it should be this
+// })
+
+// console.log(total);
+
+
+
+
+
+
+// // Q3 — map()
+// // Create a new array where every number is doubled.
+// // Expected: [4, 8, 12, 16]
+
+// let numbers = [2, 4, 6, 8];
+
+// let doubled = numbers.map(function(num){
+//     return num * 2;
+// })
+
+// console.log(doubled);
+
+
+
+
+
+// // Q4 — filter()
+// // Create a new array containing only ages 18 or above.
+
+// let ages = [12, 18, 25, 15, 30, 16];
+
+// let newNumbers = numbers.filter(function(num){
+//     return num >= 18;
+// })
+
+// console.log(newNumbers);
+
+
+
+
+// // Q5 — reduce()
+// // Calculate the total price using reduce().
+
+// let prices = [100, 250, 50, 300];
+
+// let total = prices.reduce(function(num, sum){
+//      return sum + num;
+// }, 0);
+
+// console.log(total);
+
