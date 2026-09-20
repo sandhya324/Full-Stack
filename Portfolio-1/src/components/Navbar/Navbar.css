@@ -1,0 +1,50 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.Navbar{
+    background-color: #E0DFEC;
+    padding: 20px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar-menu{
+    display:flex;
+    justify-content: center;
+    gap: 40px;
+}
+.navbar-menu li{
+    list-style: none;
+    
+}
+.navbar-menu li a {
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+}
+.navbar-menu li a:hover{
+    color: #948a8a;
+}
+
+
+.contact-btn li{
+    background-color: #555252;
+    list-style: none;
+    
+    padding: 8px 12px;
+    border-radius: 8px;
+}
+.contact-btn li a{
+    border: none;
+    font-size: 16px;
+    font-weight: 550;
+    color: white;
+    text-decoration: none;
+}
+
+.contact-btn li:hover{
+    background-color: #948a8a;
+}

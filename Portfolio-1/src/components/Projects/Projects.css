@@ -1,0 +1,53 @@
+
+.projects {
+    padding: 20px;
+}
+
+.projects h1{
+    color:  #555252;
+    text-align: center;
+}
+.my-project{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px 0; 
+}
+
+.my-project .card{
+    width: 300px;
+    border-radius: 8px;
+    background-color: #555252;
+    color: white;
+}
+.my-project .card img{
+    width: 300px;
+}
+
+.card-body{
+    margin-top: 0px;
+    padding: 0 15px 15px 15px;
+}
+.card-title{
+    font-size: 20px;
+    margin-bottom: 0px;
+}
+.card-text{
+    font-size: 15px;
+}
+.card-body button{
+    background-color: #E0DFEC;
+    border-radius: 5px;
+    border: none;
+    padding: 8px 12px;
+    font-size: 16px;
+    font-weight: 500;
+    color: black;
+    margin-top: 10px;
+
+}
+.card-body button:hover{
+    background-color: #ffff;
+}
+
+

@@ -1,0 +1,17 @@
+.tech-stack{
+    background-color: #e9e6e6;
+    padding:  20px;
+}
+
+.tech-stack h1{
+    color: #555252;
+    text-align: center;
+}
+
+
+.tech-card{
+    background-color: #D1D2DF;
+    color: #555252;
+    width: 200px;
+}
+
