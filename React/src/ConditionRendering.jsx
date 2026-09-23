@@ -89,7 +89,7 @@ function ConditionRendering(){
             }
 
         </div>
-    )
+    );
 }
 
 export default ConditionRendering;
