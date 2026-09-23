@@ -1,17 +1,23 @@
-body{
-    padding: 0;
+*{
+    box-sizing: border-box;
+}
+body {
     margin: 0;
-    box-sizing: content-box;
+    padding: 0;
 }
 .home{
     background-color: #D1D2DF;
-    padding: 80px 0px;
+    padding: 80px 10%;
+    
     display: flex;
     justify-content: center;
+
     align-items: center;
 }
 .profile-left{
-   padding: 0 50px; 
+   flex: 2;
+   width: 100%;
+   color: #555252;
 }
 .profile-left h1{
     margin-bottom: 0px;
@@ -20,13 +26,14 @@ body{
     padding-top: 0px;
     margin-top: 0px;
 }
+.profile-right{
+    flex: 1.5;
+    display: flex;
+    justify-content: center;
+}
 .profile-right img{
     width: 400px;
-    padding-right: 100px;
-}
-.profile-left p{
-    padding-right: 100px;
-    color: #555252; 
+    max-width: 100%;
 }
 .profile-btn{
     display: flex;
@@ -59,4 +66,29 @@ body{
 
 
 
+
+
+
+/* ----------------------------------Media Query------------------------------------------- */
+@media(max-width: 900px){
+.home{
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.profile-left{
+   width: 100%;
+}
+.profile-left p{
+    padding-right: 0px;
+}
+.profile-right{
+    width: 100%;
+}
+.profile-right img{
+    /* width: 400px; */
+    width: 100%;
+}
+}
 

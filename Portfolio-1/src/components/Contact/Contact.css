@@ -31,6 +31,7 @@
     padding: 10px 40px;
     display: flex;
     gap: 5px;
+    align-items: center;
 }
 
 .form-input label{
@@ -38,16 +39,14 @@
 }
 
 .form-input input{
-    border: none;
-    padding: 6px 5px;
-
+    padding: 3px;
     border-radius: 4px;
     border: 1px solid #D1D2DF;
     background-color: #f3f3f8;
 }
 
 .form-input textarea{
-    border: none;
+   
     padding: 6px 0;
 
     border-radius: 4px;
@@ -118,4 +117,81 @@
 .popup-btn button:hover{
     background-color: #919090;
     border: 1px solid #555252;
+}
+
+
+
+
+
+
+
+
+/* ----------------------------------Media Query------------------------------------------- */
+
+@media(max-width: 1050px){
+
+.contact{
+    flex-direction: column;
+    margin: 50px 10px;
+}
+.contact-img img{
+    width: 500px;
+    position: absolute;
+    top: 45%;
+    left: 40%;
+}}
+
+
+
+@media(max-width: 900px){
+
+.contact-img img{
+    width: 480px;
+    top: 50%;
+}}
+
+
+@media(max-width: 850px){
+
+.contact-img img{
+    width: 440px;
+    top: 53%;
+}}
+
+@media(max-width: 780px){
+
+.contact-img img{
+    display: none;
+}}
+
+@media(max-width: 560px){
+
+    .form{
+        padding:  15px 0px;
+    }
+}
+
+
+@media(max-width: 430px){
+
+.form-input{
+    padding: 10px 20px;
+}
+
+.form-input input{
+    padding: 3px;
+}
+.form-input label{
+    font-weight: 500;
+    font-size: 14px;
+}
+.form-input textarea{
+    padding: 3px 0;
+}
+
+.form-btn button{
+    padding: 10px 12px; 
+    border: none;
+    font-size: 15px;
+}
 }

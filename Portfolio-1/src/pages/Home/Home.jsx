@@ -1,12 +1,14 @@
 import {assets} from '../../assets/assets'
 import './Home.css'
 
+import AboutUs from '../../components/AboutUs/AboutUs'
+import Projects from '../../components/Projects/Projects'
+import Technologies from '../../components/Technologies/Technologies'
+import Contact from '../../components/Contact/Contact'
+
 const Home = () => {
   return (
   <>
-
-
-
 
     <div className="home">
 
@@ -35,6 +37,10 @@ const Home = () => {
       
     </div>
 
+    <AboutUs />
+    <Projects />
+    <Technologies />
+    <Contact />
 
 
   </>

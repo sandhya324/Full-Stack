@@ -59,3 +59,49 @@
 .social-media-links li i{
     font-size: 25px;
 }
+
+
+
+
+
+
+
+
+
+
+
+/* ----------------------------------Media Query------------------------------------------- */
+@media (max-width: 850px){
+   
+.social-media-links{
+    flex-direction: column;
+    justify-content: center;
+
+    text-align: center;
+    gap: 10px;
+}
+}
+
+
+@media (max-width: 700px){
+ .Footer{
+    flex-direction: column;
+    gap: 30px;
+}  
+.social-media-links{
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 10px;
+}
+}
+
+@media (max-width: 350px){
+   
+.social-media-links{
+    flex-direction: column;
+    justify-content: center;
+
+    text-align: center;
+    gap: 10px;
+}
+}

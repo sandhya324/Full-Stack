@@ -1,7 +1,11 @@
 import React from 'react'
 import './Technologies.css'
 
-import { FaReact } from "react-icons/fa";
+import { FaReact, FaNodeJs, FaJs } from "react-icons/fa";
+import { SiMongodb } from "react-icons/si";
+import { SiExpress } from "react-icons/si";
+
+
 
 
 const Technologies = () => {
@@ -24,7 +28,7 @@ const Technologies = () => {
 
       <div className="tech-card">
         <div className="tech-icon">
-            <i></i>
+            <i><FaJs /></i>
         </div>
         <h3>JavaScript</h3>
       </div>
@@ -32,18 +36,28 @@ const Technologies = () => {
 
       <div className="tech-card">
         <div className="tech-icon">
-            <i></i>
+            <i><FaNodeJs /></i>
         </div>
         <h3>NodeJs</h3>
       </div>
 
       <div className="tech-card">
         <div className="tech-icon">
-            <i></i>
+            <i><SiExpress /></i>
+        </div>
+        <h3>ExpressJs</h3>
+      </div>
+
+      <div className="tech-card">
+        <div className="tech-icon">
+            <i><SiMongodb /></i>
         </div>
         <h3>Mango DB</h3>
       </div>
+
     </div> 
+
+    
 
 
     </div>

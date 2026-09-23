@@ -14,6 +14,10 @@ import About from './Components/pages/about.jsx'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 
+
+import LiftingState from './LiftingState.jsx'
+import ConditionRendering from './ConditionRendering.jsx'
+
 const App = () => {
   //  const user = "Sandhya";
 
@@ -110,15 +114,19 @@ const App = () => {
         </BrowserRouter> */}
 
 
-        <BrowserRouter>
+        {/* <BrowserRouter>
          <Routes>
            <Route path='/' element={<Home />} />
            <Route path='/about' element={<About />} />
-           {/* <Route path='/services' element={<Services />} /> */}
+           {/* <Route path='/services' element={<Services />} /> 
          </Routes>
-        </BrowserRouter>
+        </BrowserRouter> */}
 
 
+
+        {/* <LiftingState /> */}
+        <ConditionRendering />
+    
 
 
 

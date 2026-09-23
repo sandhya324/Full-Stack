@@ -1,32 +1,55 @@
-
 .aboutMe{
-    padding: 20px;
+    padding: 20px 50px;
     background-color: #e9e6e6;
 }
 .aboutMe h1{
     color:  #555252;
     text-align: center;
 }
-
+.About-section{
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
 .about-right {
     background-color: #D1D2DF;
     color: #555252;
     border: 1px solid #bbb4b4;
 
-    padding: 30px;
-    margin: 0 50px;
+    padding: 10px 30px;
     border-radius: 8px;
 }
 .about-left img{
-    width: 400px;
+    width: 300px;
 }
 .about-right p{
     font-size:18px;
 }
 
-.About-section{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
+
+
+
+
+
+
+
+
+/* ----------------------------------Media Query------------------------------------------- */
+@media(max-width: 1000px){
+.about-right {
+    padding: 0 20px;
+}
+.about-left img{
+    width: 200px;
+}
+.about-right p{
+    font-size:15px;
+}
+}
+
+@media(max-width: 550px){
+
+.about-left img{
+    display: none;
+}
 }
