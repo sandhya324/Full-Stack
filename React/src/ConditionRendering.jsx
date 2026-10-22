@@ -1,6 +1,3 @@
-// import React from 'react'
-
-
 
 // // ---------------------1. Using if...else----------------------
 
@@ -18,12 +15,6 @@
 
 // export default ConditionRendering
 
-
-
-
-
-
-
 // --------------------- 2. Using the ternary operator ? :----------------------
 // function ConditionRendering(){
 //     const isLoggedIn = 1;
@@ -37,14 +28,6 @@
 //     );
 // }
 // export default ConditionRendering;
-
-
-
-
-
-
-
-
 
 // --------------------- 3. Using && :----------------------
 
@@ -60,36 +43,68 @@
 // }
 // export default ConditionRendering;
 
-
-
-
-
-
-
-
-
-
+// fetch("https://jsonplaceholder.typicode.com/users")
+//   .then(res => res.json())
+//   .then(data => console.log(data));
 
 //  ---------------------------- Login Button ----------------------------
 
-import { useState } from 'react'
+import { useState, useEffect } from "react";
+import { data } from "react-router-dom";
 
-function ConditionRendering(){
-    const [isLoggedIn , setIsLoggedIn] = useState(false);
+function ConditionRendering() {
+  //     const [isLoggedIn , setIsLoggedIn] = useState(false);
+  //     let obj = {
+  //         "name":"Avneesh"
+  //     }
 
-    return (
-        <div>
+  //      fetch("https://jsonplaceholder.typicode.com/users")
+  //                  .then(res => res.json())
+  //                  .then(data => console.log(data));
 
-            {isLoggedIn ? <h1>Welcome to your Profile</h1> 
-                         :<h1>Please Login !</h1>
-            }
-            
-            {isLoggedIn ? <button onClick={()=> setIsLoggedIn(false)}>Log Out</button>
-                         :<button onClick={()=> setIsLoggedIn(true)}>Log In</button>
-            }
+  //     return (
+  //         <div>
 
-        </div>
-    );
+  //             {/* {isLoggedIn ? <h1>Welcome to your Profile</h1>
+  //                          :<h1>Please Login !</h1>
+  //             }
+
+  //             {isLoggedIn ? <button onClick={()=> setIsLoggedIn(false)}>Log Out</button>
+  //                          :<button onClick={()=> setIsLoggedIn(true)}>Log In</button>
+  //             } */}
+
+  //             <h1>{data.name}</h1>
+
+  //         </div>
+  //     );
+  // }
+
+  const [products, setProducts] = useState([]);
+  useEffect(() => {
+    fetch("https://dummyjson.com/products")
+      .then((response) => response.json())
+      .then((data) => {
+        setProducts(data.products);
+      });
+  }, []);
+  return (
+    <div>
+      {" "}
+      <h1>Products</h1>{" "}
+      <div className="products">
+        {" "}
+        {products.map((product) => (
+          <div className="product-card" key={product.id}>
+            {" "}
+            <img src={product.thumbnail} alt={product.title} />{" "}
+            <h2>{product.title}</h2> <p>{product.description}</p>{" "}
+            <p>Price: ${product.price}</p>{" "}
+            <p>Rating: ⭐ {product.rating}</p>{" "}
+          </div>
+        ))}{" "}
+      </div>{" "}
+    </div>
+  );
 }
 
 export default ConditionRendering;

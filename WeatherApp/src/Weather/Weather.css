@@ -1,0 +1,60 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.city-search{
+    background-color: rgb(182, 207, 221);
+
+    padding: 25px;
+    text-align: center;
+}
+
+.city-search input{
+  color: rgb(93, 93, 95);
+  background-color: white;
+  
+  padding: 10px;
+  margin: 10px;
+
+  border: none;
+  border-radius: 4px;
+}
+
+.city-search button{
+  padding: 10px 20px;
+  margin: 10px;
+
+  border: none;
+  border-radius: 4px;
+
+  color: rgb(93, 93, 95);
+  background-color: white;
+
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.city-search button:hover{
+  color: white;
+  background-color: rgb(140, 172, 190);
+}
+
+
+
+
+
+
+
+
+
+.weather-card{
+    background-color: rgb(182, 207, 221);
+    padding: 30px;
+
+    margin: 2px 0 ;
+    text-align: center;
+}
+
+.weather-card p{
+    margin: 15px;
+}
